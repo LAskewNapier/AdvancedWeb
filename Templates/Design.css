@@ -1,0 +1,98 @@
+Header{
+    display:block;
+    margin:0;
+    background-color: #330000;
+    color: white;
+    padding:1.5%;
+    border-radius: 0px 0px 25px 25px;
+    height: 60px;
+}
+
+H1{
+    font-size:30px;
+    float: left;
+    color: white;
+
+}
+
+.Logins{
+    margin: 0;
+    margin-Left: 85%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #ff8000;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    width: 50%;
+}
+header li a{
+  display: block;
+  color: white;
+  text-align: center;
+    border: 1px solid #cccccc;
+  text-decoration: none;
+    padding: 20%;
+}
+
+header li a:hover {
+  background-color: #5e0303;
+  color: #000000;
+  border-radius: 15px;
+}
+
+body{
+ background-image: linear-gradient(to right, #994d00 , #660000);
+}
+
+.room {
+	margin-left:  15%;
+	margin-right: 15%;
+    height: 500px;
+	border-radius: 0 0 15px 15px;
+	border: 2px solid #cccccc;
+	background-color: #ff8000;
+}
+
+nav {
+	height:35px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#330000;
+}
+
+nav li {
+  float: left;
+  width: 33.3%;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20% 25%;
+    border: 1px solid #cccccc;
+  text-decoration: none;
+
+}
+
+nav li a:hover {
+  background-color: #5e0303;
+  color: #000000;
+  border-radius: 15px;
+}
+
+.back{
+    float:left;
+    margin-top: 15%;
+}
+
+.login{
+    text-align: center;
+}
