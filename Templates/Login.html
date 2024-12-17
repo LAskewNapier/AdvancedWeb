@@ -17,11 +17,11 @@
       <input type="text" id="Username" name="Username" placeholder="Username" required />
       <p>Password:</p>
       <input type="text" id="Password" name="Password" placeholder="Password" required />
-      <h4><a href="SignUp.html">Sign Up</a></h4>
+      <h4><a href="{{ url_for('SignUp') }}">Sign Up</a></h4>
     </div>
 
 
-    <h3 class="back"><a href="Home.html">Back to Home</a></h3>
+    <h3 class="back"><a href="{{ url_for('home') }}">Back to Home</a></h3>
 </div>
 </body>
 </html>

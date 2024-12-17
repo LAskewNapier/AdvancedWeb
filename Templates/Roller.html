@@ -12,7 +12,20 @@
 </header>
 
 <div class="room">
+    <form action="" method='post' name="Roller">
+        <select id="sides" name="sides">
+            <option>{{ sides }}</option>
+            <option>4</option>
+            <option>6</option>
+            <option>8</option>
+            <option>10</option>
+            <option>12</option>
+            <option>20</option>
+        </select>
+        <input type="submit" value="Submit" id="submit">
+    </form>
 
+    <label>{{ rmessage }}</label>
 </div>
 
 </body>

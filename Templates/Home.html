@@ -10,8 +10,8 @@
 <header>
 <h1>DND Create Your Own Monster</h1>
     <ul class="Logins">
-        <li><a href="Login.html">Login</a></li>
-        <li><a href="SignUp.html">Sign Up</a></li>
+        <li><a href="{{ url_for('Login') }}">Login</a></li>
+        <li><a href="{{ url_for('SignUp') }}">Sign Up</a></li>
     </ul>
 </header>
 
@@ -21,8 +21,8 @@
     <nav>
         <ul>
             <li><a href="MonterCreation.html">Create Monster</a></li>
-            <li><a href="DiceRoller.html">Dice Roller</a></li>
-            <li><a href="Info.html">Info on Process</a></li>
+            <li><a href="{{ url_for('Roller') }}">Dice Roller</a></li>
+            <li><a href="{{ url_for('about') }}">Info on Process</a></li>
         </ul>
     </nav>
 </div>

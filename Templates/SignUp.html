@@ -20,11 +20,11 @@
       <input type="text" id="Password" name="Password" placeholder="Password" required />
       <p>Re-enter Password:</p>
       <input type="text" id="RePassword" name="rePassword" placeholder="Re-enter Password" required />
-      <h4><a href="Login.html">Login</a></h4>
+      <h4><a href="{{ url_for('Login') }}">Login</a></h4>
     </div>
 
 
-    <h3 class="back"><a href="Home.html">Back to Home</a></h3>
+    <h3 class="back"><a href="{{ url_for('home') }}">Back to Home</a></h3>
 </div>
 </body>
 </html>

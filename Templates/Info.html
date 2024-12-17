@@ -11,15 +11,15 @@
 <header>
 <h1>DND Create Your Own Monster</h1>
     <ul class="Logins">
-        <li><a href="Login.html">Login</a></li>
-        <li><a href="SignUp.html">Sign Up</a></li>
+        <li><a href="{{ url_for('Login') }}">Login</a></li>
+        <li><a href="{{ url_for('SignUp') }}">Sign Up</a></li>
     </ul>
 </header>
 <div class="room">
     <p>hello there</p>
 
 
-    <h3 class="back"><a href="Home.html">Back to Home</a></h3>
+    <h3 class="back"><a href="{{ url_for('home') }}">Back to Home</a></h3>
 </div>
 </body>
 </html>
