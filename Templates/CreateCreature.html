@@ -60,25 +60,26 @@
       </select><br>
       <p>hit Dice</p>
       <input type="number" id="HitD" name="HitD" placeholder="1"  min="1" max="99" required/><br>
+      <p>natural AC</p>
+      <select id="AC" name="AC">
+        <option></option>
+        <option>11</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>25</option>
+      </select>
 
 
-      <input type="submit" value="Create" id="submit">
+      <br><input type="submit" value="Create" id="submit">
       <h4><a href="{{ url_for('home') }}">Back to Home</a></h4>
-      <div>
-        <label>{{ Name }}</label>
-        <label>{{ Health }}</label>
-        <label>{{ Type }}</label>
-        <label>{{ STR }}</label>
-        <label>{{ DEX }}</label>
-        <label>{{ CON }}</label>
-        <label>{{ INT }}</label>
-        <label>{{ WIS }}</label>
-        <label>{{ CHA }}</label>
-        <label>{{ PB }}</label>
-        <label>{{ Throws }}</label>
-        <label>{{ Size }}</label>
-        <label>{{ HitD }}</label>
-      </div>
     </form>
   </div>
 </body>

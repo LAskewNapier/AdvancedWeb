@@ -4,6 +4,7 @@ import math
 from flask import Flask, url_for, render_template, request, redirect, session
 #for working out HP for Creatures and dice rolls
 import random
+import sqlite3
 
 app = Flask(__name__)
 app.secret_key = 'KAy32DSE[!dwsx@;ws6rc'
