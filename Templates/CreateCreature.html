@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Creature</title>
+</head>
+<body>
+  <header>
+    <h1>DND Create Your Own Monster</h1>
+  </header>
+  <div class="room">
+    <form action="" method='post' name="Roller">
+      <p>Name:</p>
+      <input type="text" id="Name" name="Name" placeholder="Name" required /><br>
+      <p>Creature Type:</p>
+      <select id="Type" name="Type">
+        <option>Aberration</option>
+        <option>Animal</option>
+        <option>Beast</option>
+        <option>Construct</option>
+        <option>Dragon</option>
+        <option>Elemental</option>
+        <option>Fey</option>
+        <option>Giant</option>
+        <option>Humanoid</option>
+        <option>Ooze</option>
+        <option>Plant</option>
+        <option>Undead</option>
+      </select>
+      <p>STR:  DEX:  CON:  INT:  WIS:  CHA:</p>
+      <input type="number" id="STR" name="STR" placeholder="10"  min="1" max="30" required/>
+      <input type="number" id="DEX" name="DEX" placeholder="10"  min="1" max="30" required/>
+      <input type="number" id="CON" name="CON" placeholder="10"  min="1" max="30" required/>
+      <input type="number" id="INT" name="INT" placeholder="10"  min="1" max="30" required/>
+      <input type="number" id="WIS" name="WIS" placeholder="10"  min="1" max="30" required/>
+      <input type="number" id="CHA" name="CHA" placeholder="10"  min="1" max="30" required/>
+      <p>Proficiency Bonus:</p>
+      <input type="number" id="PB" name="PB" placeholder="1"  min="1" max="9" required/><br>
+      <p>Saving Throws</p>
+      <input type="radio" id="STR ST" name="Throws" value="Strength Saves">
+      <label for="STR ST">Strength Saves</label><br>
+      <input type="radio" id="DEX ST" name="Throws" value="Dexterity Saves">
+      <label for="DEX ST">Dexterity Saves</label><br>
+      <input type="radio" id="CON ST" name="Throws" value="Constitution Saves">
+      <label for="CON ST">Constitution Saves</label><br>
+      <input type="radio" id="INT ST" name="Throws" value="Intelligence Saves">
+      <label for="INT ST">Intelligence Saves</label><br>
+      <input type="radio" id="WIS ST" name="Throws" value="Wisdom Saves">
+      <label for="WIS ST">Wisdom Saves</label><br>
+      <input type="radio" id="CHA ST" name="Throws" value="Charisma Saves">
+      <label for="CHA ST">Charisma Saves</label><br>
+      <p>Size</p>
+      <select id="Size" name="Size" required>
+        <option>Tiny</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>Huge</option>
+        <option>Gargantuan</option>
+      </select><br>
+      <p>hit Dice</p>
+      <input type="number" id="HitD" name="HitD" placeholder="1"  min="1" max="99" required/><br>
+
+
+      <input type="submit" value="Create" id="submit">
+      <h4><a href="{{ url_for('home') }}">Back to Home</a></h4>
+      <div>
+        <label>{{ Name }}</label>
+        <label>{{ Health }}</label>
+        <label>{{ Type }}</label>
+        <label>{{ STR }}</label>
+        <label>{{ DEX }}</label>
+        <label>{{ CON }}</label>
+        <label>{{ INT }}</label>
+        <label>{{ WIS }}</label>
+        <label>{{ CHA }}</label>
+        <label>{{ PB }}</label>
+        <label>{{ Throws }}</label>
+        <label>{{ Size }}</label>
+        <label>{{ HitD }}</label>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
