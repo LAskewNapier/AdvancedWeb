@@ -11,15 +11,19 @@
 
 </header>
 <div class="room">
+    <p>{{ Message }}</p>
     <div class="login">
-      <p>Email:</p>
-      <input type="text" id="Email" name="Email" placeholder="Email" required />
-      <p>Username:</p>
-      <input type="text" id="Username" name="Username" placeholder="Username" required />
-      <p>Password:</p>
-      <input type="text" id="Password" name="Password" placeholder="Password" required />
-      <p>Re-enter Password:</p>
-      <input type="text" id="RePassword" name="rePassword" placeholder="Re-enter Password" required />
+        <form action="" method='post' name="SignUp">
+            <p>Email:</p>
+            <input type="text" id="Email" name="Email" placeholder="Email" required />
+            <p>Username:</p>
+            <input type="text" id="Username" name="Username" placeholder="Username" required />
+            <p>Password:</p>
+            <input type="text" id="Password" name="Password" placeholder="Password" required />
+            <p>Re-enter Password:</p>
+            <input type="text" id="RePassword" name="rePassword" placeholder="Re-enter Password" required />
+            <br><input type="submit" value="submit" id="submit">
+        </form>
       <h4><a href="{{ url_for('Login') }}">Login</a></h4>
     </div>
 

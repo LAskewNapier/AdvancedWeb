@@ -7,14 +7,18 @@
 <body>
 <header>
 <h1>DND Create Your Own Monster</h1>
-
+<a href="{{ url_for('LogOut') }}">Log Out</a>
 </header>
 
 <div class="room">
-  <ul>
-
-  </ul>
-
+    <h2>Your Monsters </h2>
+    <label>{{ name }}</label>
+    <form>
+        <select>
+            <option></option>
+        </select>
+    </form>
+    <a href="{{ url_for('CreateCreature') }}">Create Monster</a>
 </div>
 </body>
 </html>

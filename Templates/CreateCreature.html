@@ -9,6 +9,7 @@
     <h1>DND Create Your Own Monster</h1>
   </header>
   <div class="room">
+    <label>{{ Message }}</label>
     <form action="" method='post' name="Roller">
       <p>Name:</p>
       <input type="text" id="Name" name="Name" placeholder="Name" required /><br>
@@ -37,7 +38,7 @@
       <p>Proficiency Bonus:</p>
       <input type="number" id="PB" name="PB" placeholder="1"  min="1" max="9" required/><br>
       <p>Saving Throws</p>
-      <input type="radio" id="STR ST" name="Throws" value="Strength Saves">
+      <input type="radio" id="STR ST" name="Throws" value="Strength Saves" checked>
       <label for="STR ST">Strength Saves</label><br>
       <input type="radio" id="DEX ST" name="Throws" value="Dexterity Saves">
       <label for="DEX ST">Dexterity Saves</label><br>
